@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:ital,wght@1,900&display=swap");
+:root {
+  --main: #1D363B;
+  --secondary: #068D9D;
+  --accent: #b2bcbd;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main);
+  padding: 1rem;
+  font-family: inter;
+  height: 100vh;
+  width: 100vw;
+  border: 1rem rgb(39, 39, 39) solid;
+  background-clip: content-box;
+  position: relative;
+  background-image: url("./svg/moonandmountains.png");
+}
+body main {
+  padding: 1rem;
+}
+body main blockquote {
+  font-family: "inter";
+  font-weight: 800;
+  color: var(--accent);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: 50vh;
+  max-width: 50rem;
+}
+body main blockquote img {
+  border: 1px solid var(--accent);
+  padding: 10px;
+  width: 8rem;
+  height: 8rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  margin-bottom: 1rem;
+}
+body .quoter {
+  font-family: "Merriweather";
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+body .quoter::before {
+  content: "— ";
+}
+body .age {
+  color: var(--accent);
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+body button {
+  position: absolute;
+  background-color: var(--accent);
+  bottom: 1rem;
+  border: 0;
+  padding: 1em;
+  color: var(--main);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    height: 90vh;
+  }
+  main blockquote {
+    margin-top: 10rem;
+    font-size: 2rem;
+  }
+  body button {
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    border-radius: 1rem;
+    font-family: merriweather;
+  }
+}/*# sourceMappingURL=style.css.map */
