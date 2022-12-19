@@ -14,6 +14,47 @@
   box-sizing: border-box;
 }
 
+#loader {
+  background-color: var(--main);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: var(--accent);
+  font-family: inter;
+  font-weight: bolder;
+}
+#loader img {
+  width: 5rem;
+  height: 5rem;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation: rotatinMoon 1s infinite;
+          animation: rotatinMoon 1s infinite;
+}
+
+@-webkit-keyframes rotatinMoon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotatinMoon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 body {
   background-color: var(--main);
   padding: 1rem;

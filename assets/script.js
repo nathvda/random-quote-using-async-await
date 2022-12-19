@@ -25,6 +25,8 @@ function generateQuote(quote){
     main.appendChild(element);
 }
 
+let loader = document.getElementById("loader");
+
 async function loadQuote(){
    try{
     main.innerHTML = "";
@@ -33,9 +35,12 @@ async function loadQuote(){
     let name = quoteGotten.author.split(" ")[0];
     guessAge(name);
     generateQuote(quoteGotten);
+    loader.style.display = "none";
+
    }
    catch (e){
     console.log("It didn't work");
+    loader.innerHTML = "Rien à afficher =(";
    }
 }
 
