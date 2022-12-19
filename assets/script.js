@@ -10,6 +10,7 @@ function generateQuote(quote){
     quoter.classList.add("quoter");
     let haha = document.createTextNode(`${quote.author}`);
     let qimage = document.createElement("img");
+    qimage.setAttribute("alt", `${quote.author}`);
     
     
     if (`${quote.photo}` === "") {
@@ -61,7 +62,6 @@ async function guessAge(pollux){
     main.appendChild(element);
     }
     }
-
     catch (e) {
        return "no age retrieved";
     }
