@@ -70,7 +70,7 @@ body{
 .age{
     color:var(--accent);
     position:absolute;
-    bottom:1rem;
+    bottom:6rem;
     right:1rem;
 }
 
@@ -109,6 +109,14 @@ button{
         border-radius:1rem;
         font-family:merriweather;
     }
+
+    .age{
+        color:var(--accent);
+        position:absolute;
+        bottom:1rem;
+        right:1rem;
+    }
+    
 }
 
 

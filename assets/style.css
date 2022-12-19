@@ -60,7 +60,7 @@ body .quoter::before {
 body .age {
   color: var(--accent);
   position: absolute;
-  bottom: 1rem;
+  bottom: 6rem;
   right: 1rem;
 }
 body button {
@@ -93,5 +93,11 @@ body button {
     font-size: 1rem;
     border-radius: 1rem;
     font-family: merriweather;
+  }
+  body .age {
+    color: var(--accent);
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
