@@ -13,7 +13,7 @@ function generateQuote(quote){
     
     
     if (`${quote.photo}` === "") {
-        qimage.src = `https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/SGI-2016-South_Georgia_%28Fortuna_Bay%29%E2%80%93King_penguin_%28Aptenodytes_patagonicus%29_04.jpg/1200px-SGI-2016-South_Georgia_%28Fortuna_Bay%29%E2%80%93King_penguin_%28Aptenodytes_patagonicus%29_04.jpg`;
+        qimage.src = `./assets/svg/profile.svg`;
     } else {
         qimage.src = `${quote.photo}`;
     }
@@ -28,6 +28,7 @@ function generateQuote(quote){
 let loader = document.getElementById("loader");
 
 async function loadQuote(){
+    loader.style.display = "flex"; 
    try{
     main.innerHTML = "";
     let quoteWanted = await fetch('https://thatsthespir.it/api');
