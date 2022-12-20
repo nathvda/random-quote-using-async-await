@@ -123,6 +123,9 @@ button{
 
 @media screen and (min-width:800px){
 
+  body{ 
+    
+    
     main{
         display:flex;
         justify-content: center;
@@ -132,11 +135,12 @@ button{
 
         blockquote{
             margin-top:10rem;
-            font-size:2rem;
+            font-size:1.5rem;
         }
     }
 
-  body{ button{
+
+ button{
         bottom:5rem;
         left:50%;
         transform:translateX(-50%);
